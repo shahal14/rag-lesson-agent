@@ -2,7 +2,7 @@ import os, json, re, time
 from openai import OpenAI, RateLimitError, APIConnectionError, APIStatusError
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 API_KEY = os.getenv("PROVIDER_API_KEY")
 if not API_KEY:
@@ -21,7 +21,7 @@ def _is_daily(err):
     return "perday" in t or "per day" in t or "daily" in t
 
 
-def ask(system, user, model, temperature=0.7, max_tokens=8000):
+def ask(system, user, model, temperature=0.7, max_tokens=4000):
     """Call the model. Retries on rate limits and busy servers, then uses the other model."""
     backup = JUDGE_MODEL if model == GEN_MODEL else GEN_MODEL
     models = [model] + ([backup] if backup and backup != model else [])

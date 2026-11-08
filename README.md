@@ -80,8 +80,7 @@ Control (the passing lesson) fails no code checks.
 | 41-word sentences | L1 | Caught |
 | "Why" section removed | F1 | Caught |
 | Example section removed | F1 | Caught |
-| Wrong fact ("RAG retrains the model") | A1, A3 (LLM) | <fill in from run_tests.py> |
-
+| Wrong fact: "RAG retrains the model" | A1 and A3 (LLM) | Caught, with the contradiction quoted |
 ## Files
 
 `main.py` entry point, `graph.py` LangGraph loop, `generator.py`, `evaluator.py`, `memory.py`,
