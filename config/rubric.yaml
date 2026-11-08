@@ -1,0 +1,83 @@
+checks:
+  - id: A1
+    dimension: accurate
+    type: llm
+    question: "Does the lesson contain NO claim that contradicts the fact sheet?"
+
+  - id: A2
+    dimension: accurate
+    type: llm
+    question: "Does the lesson avoid invented statistics, papers, company names or product claims that are not in the fact sheet?"
+
+  - id: A3
+    dimension: accurate
+    type: llm
+    question: "Does the lesson clearly say that RAG does not retrain or change the model?"
+
+  - id: L1
+    dimension: language
+    type: code
+    max_avg_words: 15
+    max_sentence_words: 25
+
+  - id: L2
+    dimension: language
+    type: code
+    max_grade: 8
+
+  - id: L3
+    dimension: language
+    type: llm
+    question: "Look only at the wording of the sentences. Is the lesson free of idioms, slang and figurative English phrases that a non-native reader may not understand (for example 'piece of cake' or 'under the hood')? Do NOT fail the lesson for using an analogy such as an exam; analogies are judged by a different check."
+
+  - id: J1
+    dimension: jargon
+    type: code
+    max_gap: 1
+    terms:
+      LLM: "LLM"
+      prompt: "prompt"
+      retrieval: "retriev"
+      hallucination: "hallucinat"
+      chunk: "chunk"
+      embedding: "embedding"
+      vector database: "vector database"
+  - id: J2
+    dimension: jargon
+    type: code
+    min_entries: 7
+    required_terms: [LLM, prompt, retrieval, hallucination, chunk, embedding, vector database]
+
+  - id: E1
+    dimension: examples
+    type: llm
+    question: "Does the lesson include at least one everyday analogy that is accurate and not misleading?"
+
+  - id: E2
+    dimension: examples
+    type: llm
+    question: "Does the lesson include one worked example that shows (1) an ordinary user question about some stored document, (2) the text found by retrieval, (3) what the LLM would say WITHOUT retrieval, and (4) the final answer that uses the found text?"
+
+  - id: C1
+    dimension: coverage
+    type: llm
+    question: "Does the lesson explain what RAG is?"
+
+  - id: C2
+    dimension: coverage
+    type: llm
+    question: "Does the lesson explain why RAG matters (old knowledge, hallucination, private data)?"
+
+  - id: C3
+    dimension: coverage
+    type: llm
+    question: "Does the lesson explain how RAG works in clear ordered steps (retrieve, augment, generate)?"
+
+  - id: F1
+    dimension: flow
+    type: code
+
+  - id: F2
+    dimension: flow
+    type: code
+    banned_terms: [LLM, prompt, hallucinat, retriev, embedding, chunk, vector database]

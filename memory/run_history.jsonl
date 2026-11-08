@@ -1,0 +1,9 @@
+{"time": "2026-11-07T17:26:48", "topic": "Introduction to RAG (Retrieval-Augmented Generation)", "attempts": 2, "status": "PASSED", "failed_checks": ["F2", "J1"]}
+{"time": "2026-11-07T18:42:47", "topic": "Introduction to LLM", "attempts": 2, "status": "PASSED", "failed_checks": ["J1"]}
+{"time": "2026-11-08T01:57:29", "topic": "Introduction to LLM", "attempts": 3, "status": "NEEDS_HUMAN_REVIEW", "failed_checks": ["F2", "J1", "J2", "L3"]}
+{"time": "2026-11-08T02:30:19", "topic": "Introduction to LLM", "attempts": 3, "status": "NEEDS_HUMAN_REVIEW", "failed_checks": ["F2", "J1", "L1"]}
+{"time": "2026-11-08T03:16:39", "topic": "Introduction to LLM", "attempts": 3, "status": "NEEDS_HUMAN_REVIEW", "failed_checks": ["F2", "L1"]}
+{"time": "2026-11-08T11:44:34", "topic": "Introduction to LLM", "attempts": 3, "status": "NEEDS_HUMAN_REVIEW", "failed_checks": ["J1"]}
+{"time": "2026-11-08T12:51:15", "topic": "Introduction to LLM", "attempts": 3, "status": "NEEDS_HUMAN_REVIEW", "failed_checks": ["F2"]}
+{"time": "2026-11-08T13:18:56", "topic": "Introduction to LLM", "attempts": 3, "status": "PASSED", "failed_checks": ["L1"]}
+{"time": "2026-11-08T13:23:45", "topic": "Introduction to LLM", "attempts": 1, "status": "PASSED", "failed_checks": []}
